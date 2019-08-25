@@ -51,7 +51,7 @@ public class DemoApplicationTests {
 		String uri= "/singlebooks/notexits";
 		MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaTypes.ALPS_JSON_VALUE)).andReturn();
 		int status = mvcResult.getResponse().getStatus();
-		assertEquals(500, status);
+		assertEquals(500, status); asdasd
 	}*/
 	@Test
 	public void contextLoads() {
