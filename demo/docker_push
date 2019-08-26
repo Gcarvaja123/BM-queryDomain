@@ -1,5 +1,5 @@
-    #!/bin/bash
-    echo "$password" | docker login -u "$user" -- password-stdin
-    docker pull user/bm-querydomain
-    docker tag bm-querydomain user/bm-querydomain
-    docker push user/bm-querydomain
+#!/bin/bash
+echo "$password" | docker login -u "$user" -- password-stdin
+docker pull $user/bm-querydomain
+docker tag bm-querydomain $user/bm-querydomain
+docker push $user/bm-querydomain
