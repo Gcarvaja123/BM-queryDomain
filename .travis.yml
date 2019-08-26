@@ -9,6 +9,7 @@ dist: trusty
 before_script:    cd demo
 
 script:   
-   mvn test
-   bash build docker_push
+   - mvn test
+   - bash build docker_push
+  
 
