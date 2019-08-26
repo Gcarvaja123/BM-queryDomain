@@ -1,0 +1,5 @@
+    #!/bin/bash
+    echo "xvkgmdwe135" | docker login -u "gcarvaja" -- password-stdin
+    docker pull gcarvaja/bm-querydomain
+    docker tag bm-querydomain gcarvaja/bm-querydomain
+    docker push gcarvaja/bm-querydomain
