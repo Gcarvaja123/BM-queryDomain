@@ -10,5 +10,5 @@ before_script:    cd demo
 
 script:   
    mvn test
-   build docker_push
+   bash build docker_push
 
