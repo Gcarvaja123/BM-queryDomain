@@ -8,10 +8,15 @@ services :
 dist: trusty
 before_script:    cd demo
 
-
+before_install:
+  docker build -t gcarvaja/bm-querydomain .
 
 
 script:   
    mvn test
 
-
+after_success:
+   if: [ "$TRAVIS_BRANCH" == "master" ]; then
+      docker login -e="gabriel.carvajal.14@sansano.usm.cl" -u="gcarvaja" -p="xvkgmdwe135";
+      docker push gcarvaja/bm-querydomain;
+   fi:
