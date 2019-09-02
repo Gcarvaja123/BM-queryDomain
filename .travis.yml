@@ -10,6 +10,6 @@ before_script:    cd demo
 
 script:   
    - mvn test
-#   - bash docker_push
+   - bash docker_push
   
 
