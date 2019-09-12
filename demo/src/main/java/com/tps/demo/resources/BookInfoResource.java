@@ -48,15 +48,15 @@ public class BookInfoResource {
 			java.util.List<String> authors = volumeInfo.getAuthors();
 			String description = volumeInfo.getDescription();
 			if (authors != null && !authors.isEmpty()) {
-				System.out.print("Author(s): ");
+				/*System.out.print("Author(s): ");*/
 				author = authors.get(0);
 				for (int i = 0; i < authors.size(); ++i) {
-					System.out.print(authors.get(i));
+					/*System.out.print(authors.get(i));*/
 					if (i < authors.size() - 1) {
 						System.out.print(", ");
 					}
 				}
-				System.out.println();
+				/*System.out.println();*/
 			} else {
 				author = "Autor no Disponible";
 			}

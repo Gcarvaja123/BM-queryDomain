@@ -9,12 +9,12 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PracticalTipSender {
+public class Sender {
 
 
     private final RabbitTemplate rabbitTemplate;
 
-    public PracticalTipSender(final RabbitTemplate rabbitTemplate) {
+    public Sender(final RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
 

@@ -2,13 +2,13 @@ package com.tps.demo.rabbitmq;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class PracticalTipMessage {
+public class Message {
 
     private final String text;
     private final int priority;
     private final boolean secret;
 
-    public PracticalTipMessage(@JsonProperty("text") final String text,
+    public Message(@JsonProperty("text") final String text,
                                @JsonProperty("priority") final int priority,
                                @JsonProperty("secret") final boolean secret) {
         this.text = text;
@@ -30,7 +30,7 @@ public class PracticalTipMessage {
 
     @Override
     public String toString() {
-        return "PracticalTipMessage{" +
+        return "Message{" +
                 "text='" + text + '\'' +
                 ", priority=" + priority +
                 ", secret=" + secret +
